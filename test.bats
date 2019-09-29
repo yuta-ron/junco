@@ -7,3 +7,7 @@ setup() {
 teardown() {
     echo "teardown ${BATS_TEST_NAME} ..." >> ./bats.log
 }
+
+@test "previews on cli" {
+    run ./animation.sh
+}
