@@ -10,5 +10,5 @@ teardown() {
 
 @test "previews on cli" {
     run ./animation.sh
-    [ "${output}" -n "" ]
+    [ "${lines[0]}" != "" ]
 }
